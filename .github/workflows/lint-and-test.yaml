@@ -1,0 +1,13 @@
+name: Lint and Test
+on: push
+jobs:
+  lint-and-test:
+    name: Lint and Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: oven-sh/setup-bun@v1
+      - run: bun install --ignore-scripts # ignore husky hooks
+      - run: bun ec # check editorconfig
+      - run: bun lint # lint code
+      - run: bun test

@@ -1,0 +1,31 @@
+{
+  "name": "whizus-bun-starter",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.13.1",
+    "@typescript-eslint/parser": "^6.13.1",
+    "bun-types": "latest",
+    "editorconfig-checker": "^5.1.2",
+    "eslint": "^8.54.0",
+    "eslint-config-standard-with-typescript": "^40.0.0",
+    "husky": "^8.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bun src/index.ts",
+    "dev": "bun --watch src/index.ts",
+    "test": "bun test tests",
+    "test-watch": "bun test --watch tests",
+    "lint": "eslint .",
+    "ec": "editorconfig-checker",
+    "lint-fix": "eslint . --fix",
+    "prepare": "husky install",
+    "build": "bun build src/index.ts --minify --target=bun --outfile dist/build.js"
+  },
+  "dependencies": {
+    "elysia": "^0.7.29"
+  }
+}
