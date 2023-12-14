@@ -3,16 +3,19 @@
   "module": "src/index.ts",
   "type": "module",
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^6.13.1",
-    "@typescript-eslint/parser": "^6.13.1",
-    "bun-types": "latest",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "bun-types": "^1.0.18",
     "editorconfig-checker": "^5.1.2",
-    "eslint": "^8.54.0",
-    "eslint-config-standard-with-typescript": "^40.0.0",
+    "eslint": "^8.55.0",
+    "eslint-config-standard-with-typescript": "^42.0.0",
     "husky": "^8.0.0"
   },
   "peerDependencies": {
-    "typescript": "^5.0.0"
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "elysia": "^0.7.30"
   },
   "scripts": {
     "start": "bun src/index.ts",
@@ -24,8 +27,5 @@
     "lint-fix": "eslint . --fix",
     "prepare": "husky install",
     "build": "bun build src/index.ts --minify --target=bun --outfile dist/build.js"
-  },
-  "dependencies": {
-    "elysia": "^0.7.29"
   }
 }
