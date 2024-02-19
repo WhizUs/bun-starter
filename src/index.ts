@@ -5,6 +5,8 @@ export const app = new Elysia()
   .get('*', () => 'Hello bun Elysia')
   .listen(3000)
 
+const serverAddress: string = app.server?.url.toString() ?? '--unknown--'
+
 console.log(
-  `🦊 Elysia is running at ${app.server?.hostname}:${app.server?.port}`,
+  `🦊 Elysia is running at ${serverAddress}`,
 )

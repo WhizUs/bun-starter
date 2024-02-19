@@ -3,19 +3,17 @@
   "module": "src/index.ts",
   "type": "module",
   "devDependencies": {
-    "@types/bun": "1.0.4",
-    "@typescript-eslint/eslint-plugin": "6.21.0",
-    "@typescript-eslint/parser": "6.21.0",
-    "editorconfig-checker": "5.1.3",
+    "@types/bun": "1.0.6",
+    "@typescript-eslint/eslint-plugin": "7.0.1",
+    "@typescript-eslint/parser": "7.0.1",
+    "editorconfig-checker": "5.1.4",
     "eslint": "8.56.0",
     "eslint-config-standard-with-typescript": "43.0.1",
-    "husky": "9.0.10"
-  },
-  "peerDependencies": {
+    "husky": "9.0.11",
     "typescript": "5.3.3"
   },
   "dependencies": {
-    "elysia": "0.8.15"
+    "elysia": "next"
   },
   "scripts": {
     "start": "bun src/index.ts",
