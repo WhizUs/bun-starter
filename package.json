@@ -3,11 +3,11 @@
   "module": "src/index.ts",
   "type": "module",
   "devDependencies": {
-    "@types/bun": "1.0.6",
-    "@typescript-eslint/eslint-plugin": "7.0.1",
-    "@typescript-eslint/parser": "7.0.1",
+    "@types/bun": "1.0.7",
+    "@typescript-eslint/eslint-plugin": "7.0.2",
+    "@typescript-eslint/parser": "7.0.2",
     "editorconfig-checker": "5.1.4",
-    "eslint": "8.56.0",
+    "eslint": "8.57.0",
     "eslint-config-standard-with-typescript": "43.0.1",
     "husky": "9.0.11",
     "typescript": "5.3.3"
