@@ -1,8 +1,19 @@
 import { Elysia } from 'elysia'
 
-export const app = new Elysia()
+export const app = new Elysia({
+  serve: {
+    hostname: '0.0.0.0',
+  },
+})
   .get('/ping', () => 'pong')
-  .get('*', () => 'Hello bun Elysia')
+  .get('*', ({ query }) => {
+    console.log(query)
+    return 'Hello bun Elysia'
+  })
+  .post('*', ({ body }) => {
+    console.log(body)
+    return 'done'
+  })
   .listen(3000)
 
 const serverAddress: string = app.server?.url.toString() ?? '--unknown--'
