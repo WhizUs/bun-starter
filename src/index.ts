@@ -18,6 +18,4 @@ export const app = new Elysia({
 
 const serverAddress: string = app.server?.url.toString() ?? '--unknown--'
 
-console.log(
-  `🦊 Elysia is running at ${serverAddress}`,
-)
+console.log(`🦊 Elysia is running at ${serverAddress}`)

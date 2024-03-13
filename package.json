@@ -3,14 +3,10 @@
   "module": "src/index.ts",
   "type": "module",
   "devDependencies": {
+    "@biomejs/biome": "1.6.1",
     "@types/bun": "1.0.8",
-    "@typescript-eslint/eslint-plugin": "7.1.0",
-    "@typescript-eslint/parser": "7.1.0",
-    "editorconfig-checker": "5.1.4",
-    "eslint": "8.57.0",
-    "eslint-config-standard-with-typescript": "43.0.1",
     "husky": "9.0.11",
-    "typescript": "5.3.3"
+    "typescript": "5.4.2"
   },
   "dependencies": {
     "elysia": "next"
@@ -20,9 +16,12 @@
     "dev": "bun --watch src/index.ts",
     "test": "bun test tests",
     "test-watch": "bun test --watch tests",
-    "lint": "eslint .",
-    "ec": "editorconfig-checker",
-    "lint-fix": "eslint . --fix",
+    "biome": "biome check .",
+    "biome-fix": "biome check --apply .",
+    "lint": "biome lint .",
+    "lint-fix": "biome lint --apply .",
+    "format": "biome format .",
+    "format-fix": "biome format --write .",
     "prepare": "husky",
     "build": "bun build src/index.ts --minify --target=bun --outfile dist/build.js"
   }

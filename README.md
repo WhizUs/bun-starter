@@ -13,11 +13,11 @@ bun create WhizUs/bun-starter my-bun-project
 
 ## Features
 - pre-configured lint and [editorconfig](https://editorconfig.org/)
-  - eslint
-    - with [ts-standard](https://github.com/standard/ts-standard) rules
-    - and some custom rules
+  - biome
+    - lint code
+    - format code
 - pre-commit hook using [husky](https://typicode.github.io/husky/)
-- [rtx](https://rtx.pub/) config
+- [mise-en-place](https://mise.jdx.dev/) config
   - to get current version of bun automatically
 
 ## Contribute
