@@ -3,15 +3,15 @@
   "module": "src/index.ts",
   "type": "module",
   "devDependencies": {
-    "@biomejs/biome": "1.8.2",
-    "@types/bun": "1.1.5",
+    "@biomejs/biome": "1.8.3",
+    "@types/bun": "1.1.6",
     "husky": "9.0.11"
   },
   "peerDependencies": {
-    "typescript": "5.5.2"
+    "typescript": "5.5.3"
   },
   "dependencies": {
-    "elysia": "1.0.25"
+    "elysia": "1.0.27"
   },
   "scripts": {
     "start": "bun src/index.ts",
@@ -19,9 +19,9 @@
     "test": "bun test tests",
     "test-watch": "bun test --watch tests",
     "biome": "biome check .",
-    "biome-fix": "biome check --apply .",
+    "biome-fix": "biome check --fix .",
     "lint": "biome lint .",
-    "lint-fix": "biome lint --apply .",
+    "lint-fix": "biome lint --fix .",
     "format": "biome format .",
     "format-fix": "biome format --write .",
     "prepare": "husky",
